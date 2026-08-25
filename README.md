@@ -5,6 +5,7 @@ Firewalla routers ship with a very old version of Unbound (**1.13.0** on the new
 This guide walks through pulling the Unbound source, building it directly on the Firewalla, and running it as a separate service alongside (or in place of) the stock Unbound.
 
 > **Use at your own risk.** Tested on a Firewalla Gold Plus, but should work on Orange and all Gold models. I wouldn't try this on a Purple or older but YMMV.
+> **This will not be able to run DNS-over-QUIC.** That requires a newer version of OpenSSL (=>3.5.0) as well as and additional library. Both would need to be built and added to the FW, and I didn't have the gumption to try this.
 
 ## Overview
 
